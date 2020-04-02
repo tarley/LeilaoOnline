@@ -19,6 +19,31 @@ public class FormaPagamento {
     private Calendar criadoEm;
 
     @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 71 * hash + Objects.hashCode(this.numero);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final FormaPagamento other = (FormaPagamento) obj;
+        if (!Objects.equals(this.numero, other.numero)) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override
     public String toString() {
         return "FormaPagamento{" + "nome=" + nome + ", numero=" + numero + '}';
     }
