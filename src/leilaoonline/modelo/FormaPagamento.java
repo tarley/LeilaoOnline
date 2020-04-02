@@ -17,6 +17,7 @@ public class FormaPagamento {
     private String nome;
     private String numero;
     private Calendar criadoEm;
+    private String situacao;
 
     @Override
     public String toString() {
