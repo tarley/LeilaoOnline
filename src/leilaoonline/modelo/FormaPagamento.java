@@ -21,7 +21,7 @@ public class FormaPagamento {
 
     @Override
     public int hashCode() {
-        int hash = 5;
+        int hash = 12;
         hash = 71 * hash + Objects.hashCode(this.numero);
         return hash;
     }
