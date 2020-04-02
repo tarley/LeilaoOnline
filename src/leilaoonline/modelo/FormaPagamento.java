@@ -17,7 +17,12 @@ public class FormaPagamento {
     private String nome;
     private String numero;
     private Calendar criadoEm;
-    
+
+    @Override
+    public String toString() {
+        return "FormaPagamento{" + "nome=" + nome + ", numero=" + numero + '}';
+    }
+
     /**
      * @return the nome
      */
